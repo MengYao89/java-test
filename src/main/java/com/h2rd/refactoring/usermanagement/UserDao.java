@@ -1,71 +1,15 @@
 package com.h2rd.refactoring.usermanagement;
 
-import java.util.ArrayList;
+import java.util.List;
 
-public class UserDao {
+public interface UserDao {
+    boolean saveUser(User user);
 
-    public ArrayList<User> users;
+    List<User> getUsers();
 
-    public static UserDao userDao;
+    boolean deleteUser(User userToDelete);
 
-    public static UserDao getUserDao() {
-        if (userDao == null) {
-            userDao = new UserDao();
-        }
-        return userDao;
-    }
+    boolean updateUser(User userToUpdate);
 
-    public void saveUser(User user) {
-        if (users == null) {
-            users = new ArrayList<User>();
-        }
-        users.add(user);
-    }
-
-    public ArrayList<User> getUsers() {
-        try {
-            return users;
-        } catch (Throwable e) {
-            System.out.println("error");
-            return null;
-        }
-    }
-
-    public void deleteUser(User userToDelete) {
-        try {
-            for (User user : users) {
-                if (user.getName() == userToDelete.getName()) {
-                    users.remove(user);
-                }
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-    public void updateUser(User userToUpdate) {
-        try {
-            for (User user : users) {
-                if (user.getName() == userToUpdate.getName()) {
-                    user.setEmail(userToUpdate.getEmail());
-                    user.setRoles(userToUpdate.getRoles());
-                }
-            }
-        } catch (RuntimeException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public User findUser(String name) {
-        try {
-            for (User user : users) {
-                if (user.getName() == name) {
-                    return user;
-                }
-            }
-        } catch (NullPointerException e) {
-            e.printStackTrace();
-        }
-        return null;
-    }
+    User findUser(String email);
 }

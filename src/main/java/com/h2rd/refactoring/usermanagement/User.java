@@ -1,14 +1,16 @@
 package com.h2rd.refactoring.usermanagement;
 
+
 import javax.xml.bind.annotation.XmlRootElement;
+import java.io.Serializable;
 import java.util.List;
 
 @XmlRootElement
-public class User {
+public class User implements Serializable{
 
-    String name;
-    String email;
-    List<String> roles;
+    private String name;
+    private String email;
+    private List<String> roles;
 
     public String getName() {
         return name;
@@ -25,7 +27,36 @@ public class User {
     public List<String> getRoles() {
         return roles;
     }
+
     public void setRoles(List<String> roles) {
         this.roles = roles;
     }
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((email == null) ? 0 : email.hashCode());
+        return result;
+    }
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        User other = (User) obj;
+        if (email == null) {
+            if (other.email != null)
+                return false;
+        } else if (!email.equals(other.email))
+            return false;
+        return true;
+    }
+    @Override
+    public String toString() {
+        return "name=" + name + ", email=" + email + ", roles=" + roles;
+    }
+
 }
