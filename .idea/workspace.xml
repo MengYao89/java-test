@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9857406-37d5-4ff2-8dc4-d11b499cc749" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/h2rd/refactoring/usermanagement/UserDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/h2rd/refactoring/util/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/h2rd/refactoring/usermanagement/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/h2rd/refactoring/usermanagement/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/h2rd/refactoring/usermanagement/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/h2rd/refactoring/usermanagement/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/h2rd/refactoring/web/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/h2rd/refactoring/web/UserResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/com/h2rd/refactoring/integration/UserIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/com/h2rd/refactoring/integration/UserIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/com/h2rd/refactoring/unit/UserDaoUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/com/h2rd/refactoring/unit/UserDaoUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/com/h2rd/refactoring/unit/UserResourceUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/com/h2rd/refactoring/unit/UserResourceUnitTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,7 +20,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/h2rd/refactoring/web/UserResource.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="817">
@@ -34,6 +29,39 @@
                 <element signature="imports" expanded="true" />
                 <element signature="e#4907#4919#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/test/com/h2rd/refactoring/integration/UserIntegrationTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/test/com/h2rd/refactoring/unit/UserDaoUnitTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="111">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/test/com/h2rd/refactoring/unit/UserResourceUnitTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-934">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -58,6 +86,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/h2rd/refactoring/usermanagement/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/h2rd/refactoring/util/Message.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/h2rd/refactoring/web/UserResource.java" />
+        <option value="$PROJECT_DIR$/src/test/java/test/com/h2rd/refactoring/integration/UserIntegrationTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/test/com/h2rd/refactoring/unit/UserDaoUnitTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/test/com/h2rd/refactoring/unit/UserResourceUnitTest.java" />
       </list>
     </option>
   </component>
@@ -88,49 +119,40 @@
               <item name="java-test" type="b2602c69:ProjectViewProjectNode" />
               <item name="java-test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="java-test" type="b2602c69:ProjectViewProjectNode" />
               <item name="java-test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="java-test" type="b2602c69:ProjectViewProjectNode" />
               <item name="java-test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="refactoring" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java-test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="refactoring" type="462c0819:PsiDirectoryNode" />
-              <item name="usermanagement" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="java-test" type="b2602c69:ProjectViewProjectNode" />
               <item name="java-test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="refactoring" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="integration" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="java-test" type="b2602c69:ProjectViewProjectNode" />
               <item name="java-test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="refactoring" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="unit" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -170,12 +192,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1575253427804</updated>
-      <workItem from="1575253428937" duration="495000" />
+      <workItem from="1575253428937" duration="1988000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="495000" />
+    <option name="totallyTimeSpent" value="1988000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
@@ -277,6 +299,33 @@
             <element signature="imports" expanded="true" />
             <element signature="e#4907#4919#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/com/h2rd/refactoring/integration/UserIntegrationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/com/h2rd/refactoring/unit/UserDaoUnitTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/com/h2rd/refactoring/unit/UserResourceUnitTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-934">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>

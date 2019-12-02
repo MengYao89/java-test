@@ -1,4 +1,6 @@
-com\h2rd\refactoring\usermanagement\User.class
-com\h2rd\refactoring\web\UserResource$1.class
 com\h2rd\refactoring\web\UserResource.class
+com\h2rd\refactoring\usermanagement\User.class
+com\h2rd\refactoring\usermanagement\UserDaoImpl.class
+com\h2rd\refactoring\util\Message.class
+com\h2rd\refactoring\web\UserResource$1.class
 com\h2rd\refactoring\usermanagement\UserDao.class
